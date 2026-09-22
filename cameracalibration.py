@@ -10,7 +10,7 @@ objpoints = []
 imgpoints = []
 
 # Read all chessboard images
-images = glob.glob("images/*.jpg")
+images = glob.glob("images/*.jpeg")
 print("Images Found:", len(images))
 print(images)
 for file in images:

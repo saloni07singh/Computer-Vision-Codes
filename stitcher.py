@@ -1,11 +1,11 @@
 import cv2 as cv
 
-img1 = cv.imread("1ststitch.jpg")
-img2 = cv.imread("2ndstitch.jpg")
+img1 = cv.imread("1stitch.png")
+img2 = cv.imread("2stitch.png")
 
 stitcher = cv.Stitcher_create()
 
-status, result = stitcher.stitch([img1, img2])
+status, result = stitcher.stitch([img1,img2])
 
 if status == cv.Stitcher_OK:
     cv.imshow("Panorama", result)
