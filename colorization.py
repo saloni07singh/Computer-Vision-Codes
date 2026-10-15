@@ -1,7 +1,7 @@
 import cv2
 
 # Read grayscale image
-gray = cv2.imread("gray.jpeg", cv2.IMREAD_GRAYSCALE)
+gray = cv2.imread("grey.jpeg", cv2.IMREAD_GRAYSCALE)
 
 # Apply color map
 color = cv2.applyColorMap(gray, cv2.COLORMAP_JET)
