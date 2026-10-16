@@ -4,7 +4,7 @@ hog = cv2.HOGDescriptor()
 # Load pre-trained people detector
 hog.setSVMDetector(cv2.HOGDescriptor_getDefaultPeopleDetector())
 # Read image
-img = cv2.imread("pedest.jpg")
+img = cv2.imread("pedest.png")
 # Detect pedestrians
 boxes, weights = hog.detectMultiScale(
     img,
